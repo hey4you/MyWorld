@@ -1,3 +1,53 @@
-body {
-    background-color: darkgray;
-    }
+/* Required for full background image */
+html,
+body,
+header,
+.view {
+  height: 100%;
+}
+
+@media (max-width: 740px) {
+  html,
+  body,
+  header,
+  .view{
+    height: 100vh;
+  }
+}
+
+.top-nav-collapse {
+  background-color: rgb(10, 25, 94) !important;
+}
+
+.navbar:not(.top-nav-collapse) {
+  background:  rgba(10, 25, 94, 0) !important;
+}
+
+@media (max-width: 991px) {
+  .navbar:not(.top-nav-collapse) {
+    background:  rgb(10, 25, 94) !important;
+  }
+}
+
+.rgba-gradient {
+  background: -moz-linear-gradient(45deg, rgba(12, 41, 85, 0.842), rgba(27, 65, 170, 0.89) 100%);
+  background: -webkit-linear-gradient(45deg, rgb(10, 25, 94),rgba(30, 73, 218, 0.89) 100%);
+  background: linear-gradient(to 45deg, rgb(12, 7, 87), rgb(14, 61, 116) 100%); 
+
+  /*background: -moz-linear-gradient(45deg, rgba(105, 22, 22, 0.877), rgba(241, 81, 81, 0.89) 100%);
+  background: -webkit-linear-gradient(45deg, rgb(58, 1, 1),rgb(238, 47, 47) 100%);
+  background: linear-gradient(to 45deg, rgb(48, 6, 6), rgb(158, 60, 60) 100%);*/
+}
+
+.py-5{
+    background-color: transparent;
+}
+
+.space-between{
+    min-height: 125px;
+    max-height: 125px !important;
+    background-size: 100% 100%;
+    background-color: black;
+    object-fit: contain;
+}
+
