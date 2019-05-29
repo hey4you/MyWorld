@@ -6,6 +6,7 @@ header,
   height: 100%;
 }
 
+/*//////////////StartScreen/Navbar/ColorRGBforBackground/////////////*/
 @media (max-width: 740px) {
   html,
   body,
@@ -16,38 +17,125 @@ header,
 }
 
 .top-nav-collapse {
-  background-color: rgb(10, 25, 94) !important;
+  background-color: rgba(30, 73, 218, 0.55) !important;
 }
 
 .navbar:not(.top-nav-collapse) {
-  background:  rgba(10, 25, 94, 0) !important;
+  background: rgba(30, 73, 218, 0.6) !important;
 }
 
 @media (max-width: 991px) {
   .navbar:not(.top-nav-collapse) {
-    background:  rgb(10, 25, 94) !important;
+    background:  rgba(30, 73, 218, 0.6) !important;
   }
 }
 
 .rgba-gradient {
   background: -moz-linear-gradient(45deg, rgba(12, 41, 85, 0.842), rgba(27, 65, 170, 0.89) 100%);
   background: -webkit-linear-gradient(45deg, rgb(10, 25, 94),rgba(30, 73, 218, 0.89) 100%);
-  background: linear-gradient(to 45deg, rgb(12, 7, 87), rgb(14, 61, 116) 100%); 
+  background: linear-gradient(to 45deg, rgb(12, 7, 87), rgb(14, 61, 116) 100%);  
 
-  /*background: -moz-linear-gradient(45deg, rgba(105, 22, 22, 0.877), rgba(241, 81, 81, 0.89) 100%);
-  background: -webkit-linear-gradient(45deg, rgb(58, 1, 1),rgb(238, 47, 47) 100%);
-  background: linear-gradient(to 45deg, rgb(48, 6, 6), rgb(158, 60, 60) 100%);*/
+  /* background: -moz-linear-gradient(45deg, rgba(6, 79, 107, 0.877), rgba(108, 201, 136, 0.89) 100%);
+  background: -webkit-linear-gradient(45deg, rgb(34, 32, 189),rgb(40, 231, 56) 100%);
+  background: linear-gradient(to 45deg, rgb(39, 8, 78), rgb(155, 180, 62) 100%); */
 }
 
-.py-5{
-    background-color: transparent;
+.fa-share:before {
+  color: blue;
 }
 
-.space-between{
-    min-height: 125px;
-    max-height: 125px !important;
-    background-size: 100% 100%;
-    background-color: black;
-    object-fit: contain;
+/*//////////////Space between sections/////////////*/
+#space-between{
+  height: 125px;
 }
 
+/*//////////////Space between sections/////////////*/
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  box-sizing: border-box;
+  }
+
+ul li {
+  margin: 0 1.5rem 0 0;
+}
+
+  li {
+    font-size: 1.25rem;
+    margin: 0;
+    }
+  
+.gallery {
+  padding: 0 0 4rem 0;
+}
+
+.img-container {
+  width: 100%;
+  height: 500px;
+  cursor: pointer;
+  overflow: hidden;
+  display: block;
+}
+
+img {
+	width: 100%;
+  height: 500px;
+  -o-object-fit: cover;
+	object-fit: cover;
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  transform: scale(1.05);
+}
+
+.img-content-hover {
+  position: absolute;
+  z-index: 1;
+  white-space: nowrap;
+  display: none;
+  padding: 1rem;
+  background: white;
+  font-weight: 400;
+  margin-top: 1.25rem;
+  margin-left: -2rem;
+}
+
+.title {
+  color: black;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.category {
+  font-size: 1rem;
+  color: gray;
+}
+
+.img-content {
+  display: none;
+}
+
+@supports (display: grid) {
+  .gallery .grid {
+    grid-gap: 1rem;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  img:hover {
+    -webkit-transform: none;
+    -ms-transform: none;
+    transform: none;
+  }
+  
+  .img-container {
+    height: 100%;
+  }
+
+  .img-content {
+    display: block;
+    padding: 1rem 0;
+  }
