@@ -17,27 +17,28 @@ header,
 }
 
 .top-nav-collapse {
-  background-color: rgba(30, 73, 218, 0.55) !important;
+  background-color:rgb(199, 12, 12, 0.7) !important;
 }
 
 .navbar:not(.top-nav-collapse) {
-  background: rgba(30, 73, 218, 0.6) !important;
+  background: rgb(199, 12, 12, 0.7)!important;
+  align-items: center;
 }
 
 @media (max-width: 991px) {
   .navbar:not(.top-nav-collapse) {
-    background:  rgba(30, 73, 218, 0.6) !important;
+    background: rgb(199, 12, 12, 0.7)!important;
   }
 }
 
 .rgba-gradient {
-  background: -moz-linear-gradient(45deg, rgba(12, 41, 85, 0.842), rgba(27, 65, 170, 0.89) 100%);
+ /* background: -moz-linear-gradient(45deg, rgba(12, 41, 85, 0.842), rgba(27, 65, 170, 0.89) 100%);
   background: -webkit-linear-gradient(45deg, rgb(10, 25, 94),rgba(30, 73, 218, 0.89) 100%);
-  background: linear-gradient(to 45deg, rgb(12, 7, 87), rgb(14, 61, 116) 100%);  
+  background: linear-gradient(to 45deg, rgb(12, 7, 87), rgb(14, 61, 116) 100%);  */
 
-  /* background: -moz-linear-gradient(45deg, rgba(6, 79, 107, 0.877), rgba(108, 201, 136, 0.89) 100%);
-  background: -webkit-linear-gradient(45deg, rgb(34, 32, 189),rgb(40, 231, 56) 100%);
-  background: linear-gradient(to 45deg, rgb(39, 8, 78), rgb(155, 180, 62) 100%); */
+  background: -moz-linear-gradient(45deg, rgba(48, 10, 5, 0.877), rgba(167, 19, 9, 0.89) 100%);
+  background: -webkit-linear-gradient(45deg, rgb(80, 6, 6),rgb(155, 12, 12) 100%);
+  background: linear-gradient(to 45deg, rgb(90, 5, 5), rgb(199, 12, 12) 100%); 
 }
 
 .fa-share:before {
