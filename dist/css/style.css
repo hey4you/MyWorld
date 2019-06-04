@@ -120,7 +120,7 @@ img {
 
 @supports (display: grid) {
   .gallery .grid {
-    grid-gap: 1rem;
+  grid-gap: 1rem;
   }
 }
 
@@ -130,6 +130,7 @@ img {
     -ms-transform: none;
     transform: none;
   }
+}
   
   .img-container {
     height: 100%;
@@ -138,4 +139,12 @@ img {
   .img-content {
     display: block;
     padding: 1rem 0;
+  }
+
+  .page-footer font-small pt-4 {
+    background-color: blue;
+  }
+
+  .list-inline-item{
+    color: black;
   }
