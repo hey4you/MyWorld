@@ -15,7 +15,8 @@
   <!-- Your custom styles (optional) -->
   <link href="css/style.css" rel="stylesheet">
   <!-- Normal Bootstrap-->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
 
 <body>
@@ -98,11 +99,11 @@
   <!--Main layout-->
   <main>
 
-    <!--Section: about-->
     <section id="about" class="py-5">
 
       <!-- Container -->
       <div class="container">
+
         <!-- Section heading -->
         <h2 class="h1-responsive font-weight-bold text-center mb-5">Why is it so great?</h2>
         <!-- Section description -->
@@ -112,30 +113,27 @@
           ad
           minim veniam.</p>
 
-        <!-- Grid row -->
-        <div class="row">
+        <!-- Grid column -->
+        <div class="col-lg-5 text-center text-lg-left">
+          <img id="imgDino"class="img-fluid" src="img/gallery/SecurityGif.png" alt="Sample image">
+        </div>
 
-          <!-- Grid column -->
-          <div class="col-lg-5 text-center text-lg-left">
-            <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Others/screens-section.jpg"
-              alt="Sample image">
-          </div>
-          <!-- Grid column -->
+        <!-- Grid column -->
+        <div class="col-lg-7">
 
-          <!-- Grid column -->
-          <div class="col-lg-7">
+          <!-- Grid row -->
+          <div class="row mb-3">
 
-            <!-- Grid row -->
-            <div class="row mb-3">
+            <!-- Grid column -->
+            <div class="col-1">
+              <i class="fas fa-share fa-lg purple-text"></i>
+            </div>
+            <!-- Grid column -->
 
-              <!-- Grid column -->
-              <div class="col-1">
-                <i class="fas fa-share fa-lg purple-text"></i>
-              </div>
-              <!-- Grid column -->
+            <!-- Grid column -->
+            <div class="col-xl-10 col-md-11 col-10">
+              <div class="row">
 
-              <!-- Grid column -->
-              <div class="col-xl-10 col-md-11 col-10">
                 <h5 class="font-weight-bold mb-3">Safety</h5>
                 <p class="grey-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit enim ad minima veniam,
                   quis
@@ -201,18 +199,25 @@
 
     <!--Space: space-->
     <div id="space-between" class="view rgba-gradient">
-      <video class="video-intro" playsinline
-          autoplay muted loop>
-          <source src="https://mdbootstrap.com/img/video/animation.mp4" type="video/mp4">
+      <video class="video-intro" playsinline autoplay muted loop>
+        <source src="https://mdbootstrap.com/img/video/animation.mp4" type="video/mp4">
       </video>
-  </div>
+    </div>
 
 
     <!--Section: gallery-->
     <section id="gallery" class="text-center py-5">
-    
+
       <!-- Container -->
       <div class="container">
+        <h2 class="h1-responsive font-weight-bold text-center mb-5">Why is it so great?</h2>
+        <!-- Section description -->
+        <p class="lead grey-text text-center w-responsive mx-auto mb-5">Lorem ipsum dolor sit amet,
+          consectetur
+          adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+          ad
+          minim veniam.</p>
+
         <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
           <div class="carousel-inner">
             <div class="carousel-item active">
@@ -236,45 +241,37 @@
         </div>
     </section>
 
+    <!--Section: articles-->
+    <section id="articles" class="text-center py-5">
+
+      <!-- Container -->
+      <div class="container">
+
+        <!-- Section heading -->
+        <h2 class="h1-responsive font-weight-bold mb-5">Articles</h2>
+
+      </div>
+      <!-- Container -->
+
+    </section>
+
     <!--Space: space-->
     <div id="space-between" class="view rgba-gradient">
       <video class="video-intro" playsinline autoplay muted loop>
         <source src="https://mdbootstrap.com/img/video/animation.mp4" type="video/mp4">
       </video>
     </div>
-    
-    
-    <!--Section: articles-->
-    <section id="articles" class="text-center py-5">
-    
-      <!-- Container -->
-      <div class="container">
-    
-        <!-- Section heading -->
-        <h2 class="h1-responsive font-weight-bold mb-5">Articles</h2>
-    
-      </div>
-      <!-- Container -->
-    
-    </section>
 
-     <!--Space: space-->
-     <div id="space-between" class="view rgba-gradient">
-      <video class="video-intro" playsinline autoplay muted loop>
-        <source src="https://mdbootstrap.com/img/video/animation.mp4" type="video/mp4">
-      </video>
-    </div>
-    
-    </main>
+  </main>
   <!--Main layout-->
 
   <!--Footer-->
   <footer>
     <footer class="page-footer font-small pt-4">
-  
+
       <!-- Footer Elements -->
       <div class="container">
-  
+
         <!-- Social buttons -->
         <ul class="list-unstyled list-inline text-center">
           <li class="list-inline-item">
@@ -304,23 +301,26 @@
           </li>
         </ul>
         <!-- Social buttons -->
-  
+
       </div>
       <!-- Footer Elements -->
-  
+
       <!-- Copyright -->
       <div class="footer-copyright text-center py-3">© 2018 Copyright:
         <a href="https://mdbootstrap.com/education/bootstrap/"> MDBootstrap.com</a>
       </div>
       <!-- Copyright -->
-  </footer>
+    </footer>
 
 </body>
 
 <!--Bootstrap Scripts-->
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+  integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+  integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+  integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="js/addons/activeGIFbyhover.js"></script>
 
 </html>
-

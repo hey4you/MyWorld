@@ -4,6 +4,7 @@ body,
 header,
 .view {
   height: 100%;
+  box-shadow: 0px 2px 10px rgb(107, 84, 84);
 }
 
 /*//////////////StartScreen/Navbar/ColorRGBforBackground/////////////*/
@@ -47,61 +48,38 @@ header,
 
 /*//////////////Space between sections/////////////*/
 #space-between{
-  height: 125px;
+  height: 140px;
+  box-shadow: 0px 2px 10px rgb(31, 7, 7);
 }
 
-/*//////////////Space between sections/////////////*/
-* {
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  box-sizing: border-box;
-  }
+/*//////////////SectionStylingAbout/////////////*/
 
-ul li {
-  margin: 0 1.5rem 0 0;
+#imgDino{
+  align-self: center;
+  image-rendering: pixelated;
+  image-rendering: -moz-crisp-edges;
+  image-rendering: crisp-edges;
 }
 
-  li {
-    font-size: 1.25rem;
-    margin: 0;
-    }
-  
-.gallery {
-  padding: 0 0 4rem 0;
-}
 
-.img-container {
-  width: 100%;
-  height: 500px;
-  cursor: pointer;
-  overflow: hidden;
-  display: block;
+/*//////////////SectionStylingGallery/////////////*/
+
+#carouselExampleControls{
+  box-shadow: 0px 2px 16px rgb(31, 7, 7);
 }
 
 img {
 	width: 100%;
-  height: 500px;
+  height: 650px;
   -o-object-fit: cover;
 	object-fit: cover;
   -webkit-transform: scale(1);
   -ms-transform: scale(1);
   transform: scale(1);
-  -webkit-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.6s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   transform: scale(1.05);
-}
-
-.img-content-hover {
-  position: absolute;
-  z-index: 1;
-  white-space: nowrap;
-  display: none;
-  padding: 1rem;
-  background: white;
-  font-weight: 400;
-  margin-top: 1.25rem;
-  margin-left: -2rem;
 }
 
 .title {
@@ -118,34 +96,16 @@ img {
 .img-content {
   display: none;
 }
-
-@supports (display: grid) {
-  .gallery .grid {
-  grid-gap: 1rem;
-  }
+.img-container {
+  height: 100%;
 }
 
-@media screen and (max-width: 1024px) {
-  img:hover {
-    -webkit-transform: none;
-    -ms-transform: none;
-    transform: none;
-  }
+.img-content {
+  display: block;
+  padding: 1rem 0;
 }
-  
-  .img-container {
-    height: 100%;
-  }
 
-  .img-content {
-    display: block;
-    padding: 1rem 0;
-  }
-
-  .page-footer font-small pt-4 {
-    background-color: blue;
-  }
-
-  .list-inline-item{
-    color: black;
-  }
+/*////////FooterStyling///////*/
+.list-inline-item{
+   color: black;
+}
