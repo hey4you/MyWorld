@@ -54,14 +54,22 @@ header,
 
 /*//////////////SectionStylingAbout/////////////*/
 
-#imgDino{
+#imgDino {
+  align-self: center;
+  image-rendering: pixelated;
+  image-rendering: -moz-crisp-edges;
+  image-rendering: crisp-edges;
+  padding-bottom: 10px;
+}
+
+#imgDino2{
   align-self: center;
   image-rendering: pixelated;
   image-rendering: -moz-crisp-edges;
   image-rendering: crisp-edges;
 }
 
-#imgDino2{
+#imgDino3{
   align-self: center;
   image-rendering: pixelated;
   image-rendering: -moz-crisp-edges;
@@ -74,6 +82,31 @@ header,
   margin-right: auto;
   width: 40%;
 }
+
+/*//////////////SectionStylingArticle/////////////*/
+
+.filepond--drop-label {
+	color: #4c4e53;
+}
+
+.filepond--label-action {
+	text-decoration-color: #babdc0;
+}
+
+.filepond--panel-root {
+	border-radius: 2em;
+	background-color: #edf0f4;
+	height: 1em;
+}
+
+.filepond--item-panel {
+	background-color: #595e68;
+}
+
+.filepond--drip-blob {
+	background-color: #7f8a9a;
+}
+
 /*//////////////SectionStylingGallery/////////////*/
 
 #carouselExampleControls{

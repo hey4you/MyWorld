@@ -19,3 +19,14 @@ $(document).ready(function () {
     }
   );
 });
+
+$(document).ready(function () {
+  $("#imgDino3").hover(
+    function () {
+      $(this).attr("src", "img/gallery/StrengthGif.gif");
+    },
+    function () {
+      $(this).attr("src", "img/gallery/Strength.png");
+    }
+  );
+});
