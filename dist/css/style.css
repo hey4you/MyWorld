@@ -83,29 +83,41 @@ header,
   width: 40%;
 }
 
-/*//////////////SectionStylingArticle/////////////*/
+/*//////////////SectionStylingUpload/////////////*/
 
-.filepond--drop-label {
-	color: #4c4e53;
+[type="file"] {
+  height: 0;
+  overflow: hidden;
+  width: 0;
 }
 
-.filepond--label-action {
-	text-decoration-color: #babdc0;
-}
+[type="file"] + label {
+  background: #f15d22;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+	font-family: 'Poppins', sans-serif;
+	font-size: inherit;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  outline: none;
+  padding: 1rem 50px;
+  position: relative;
+  transition: all 0.3s;
+  vertical-align: middle;
+  }
 
-.filepond--panel-root {
-	border-radius: 2em;
-	background-color: #edf0f4;
-	height: 1em;
-}
+  .btn-1 {
+    background-color: #f79159;
+    box-shadow: 0 6px darken(#f79159, 10%);
+    transition: none;
+  }
 
-.filepond--item-panel {
-	background-color: #595e68;
-}
-
-.filepond--drip-blob {
-	background-color: #7f8a9a;
-}
+  #blah{
+    padding-top: 10px;
+  }
 
 /*//////////////SectionStylingGallery/////////////*/
 
